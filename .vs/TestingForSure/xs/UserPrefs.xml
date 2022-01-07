@@ -1,0 +1,29 @@
+﻿<Properties StartupConfiguration="{4C883726-2D9B-4A31-BB16-F07A3F95CC90}|Default">
+  <MonoDevelop.Ide.ItemProperties.TestingForSure PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="TestingForSure/MainWindow.cs">
+    <Files>
+      <File FileName="TestingForSure/Program.cs" Line="1" Column="1" />
+      <File FileName="TestingForSure/MainWindow.cs" Line="13" Column="17" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="TestingForSure" expanded="True">
+            <Node name="TestingForSure" expanded="True">
+              <Node name="UserInterface" expanded="True">
+                <Node name="MainWindow" selected="True" />
+              </Node>
+              <Node name="Properties" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

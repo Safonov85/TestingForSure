@@ -1,0 +1,6 @@
+/home/mikey/Projects/TestingForSure/TestingForSure/bin/Debug/TestingForSure.exe
+/home/mikey/Projects/TestingForSure/TestingForSure/bin/Debug/TestingForSure.pdb
+/home/mikey/Projects/TestingForSure/TestingForSure/obj/x86/Debug/TestingForSure.csprojAssemblyReference.cache
+/home/mikey/Projects/TestingForSure/TestingForSure/obj/x86/Debug/TestingForSure.csproj.CoreCompileInputs.cache
+/home/mikey/Projects/TestingForSure/TestingForSure/obj/x86/Debug/TestingForSure.exe
+/home/mikey/Projects/TestingForSure/TestingForSure/obj/x86/Debug/TestingForSure.pdb
