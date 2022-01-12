@@ -26,12 +26,12 @@
             <signal name="Clicked" handler="OnButtonMessageClicked" />
           </widget>
           <packing>
-            <property name="X">82</property>
-            <property name="Y">66</property>
+            <property name="X">66</property>
+            <property name="Y">57</property>
           </packing>
         </child>
         <child>
-          <widget class="Gtk.SpinButton" id="spinbutton1">
+          <widget class="Gtk.SpinButton" id="spinbuttonNum1">
             <property name="MemberName" />
             <property name="CanFocus">True</property>
             <property name="Upper">100</property>
@@ -39,11 +39,62 @@
             <property name="StepIncrement">1</property>
             <property name="ClimbRate">1</property>
             <property name="Numeric">True</property>
-            <property name="Value">3</property>
+            <property name="Value">1</property>
           </widget>
           <packing>
-            <property name="X">81</property>
-            <property name="Y">150</property>
+            <property name="X">85</property>
+            <property name="Y">132</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.ComboBox" id="comboboxArithmetic">
+            <property name="MemberName" />
+            <property name="IsTextCombo">True</property>
+            <property name="Items" translatable="yes">+
+-
+*
+/</property>
+          </widget>
+          <packing>
+            <property name="X">166</property>
+            <property name="Y">129</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Entry" id="TextBoxSecondNum2">
+            <property name="MemberName" />
+            <property name="WidthRequest">93</property>
+            <property name="CanFocus">True</property>
+            <property name="IsEditable">True</property>
+            <property name="InvisibleChar">•</property>
+          </widget>
+          <packing>
+            <property name="X">255</property>
+            <property name="Y">131</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Button" id="ButtonCalculateSum">
+            <property name="MemberName" />
+            <property name="CanFocus">True</property>
+            <property name="Type">TextOnly</property>
+            <property name="Label" translatable="yes">Calculate!</property>
+            <property name="UseUnderline">True</property>
+            <signal name="Clicked" handler="OnButtonCalculateSumClicked" />
+          </widget>
+          <packing>
+            <property name="X">380</property>
+            <property name="Y">128</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Label" id="labelResult">
+            <property name="MemberName" />
+            <property name="LabelProp" translatable="yes">label1</property>
+          </widget>
+          <packing>
+            <property name="X">542</property>
+            <property name="Y">132</property>
           </packing>
         </child>
       </widget>

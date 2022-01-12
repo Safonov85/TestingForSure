@@ -2,18 +2,16 @@
   <MonoDevelop.Ide.ItemProperties.TestingForSure PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.Workbench ActiveDocument="TestingForSure/MainWindow.cs">
     <Files>
-      <File FileName="TestingForSure/Program.cs" Line="1" Column="1" />
-      <File FileName="TestingForSure/MainWindow.cs" Line="13" Column="17" />
+      <File FileName="TestingForSure/MainWindow.cs" Line="69" Column="6" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="TestingForSure" expanded="True">
             <Node name="TestingForSure" expanded="True">
-              <Node name="UserInterface" expanded="True">
-                <Node name="MainWindow" selected="True" />
-              </Node>
+              <Node name="UserInterface" expanded="True" />
               <Node name="Properties" expanded="True" />
+              <Node name="MainWindow.cs" selected="True" />
             </Node>
           </Node>
         </State>
