@@ -86,7 +86,6 @@ public partial class MainWindow
 		// Container child fixed1.Gtk.Fixed+FixedChild
 		this.labelResult = new global::Gtk.Label();
 		this.labelResult.Name = "labelResult";
-		this.labelResult.LabelProp = global::Mono.Unix.Catalog.GetString("label1");
 		this.fixed1.Add(this.labelResult);
 		global::Gtk.Fixed.FixedChild w6 = ((global::Gtk.Fixed.FixedChild)(this.fixed1[this.labelResult]));
 		w6.X = 542;

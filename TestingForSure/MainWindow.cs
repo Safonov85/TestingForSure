@@ -18,8 +18,11 @@ public partial class MainWindow : Gtk.Window
 
         NewMessage();
 
+        //string man = fixed1.ToString();
+
     }
 
+    // MessageBox for Mono
     void NewMessage()
     {
         MessageDialog messageBox = new MessageDialog(
@@ -38,13 +41,13 @@ public partial class MainWindow : Gtk.Window
         CalculateNow();
     }
 
-    void CalculateNow()
+    private void CalculateNow()
     {
 
         labelResult.Text = GetSumOfNumbers(comboboxArithmetic.ActiveText, float.Parse(spinbuttonNum1.Text), float.Parse(TextBoxSecondNum2.Text)).ToString();
     }
 
-    float GetSumOfNumbers(string operation, float num1, float num2)
+    private float GetSumOfNumbers(string operation, float num1, float num2)
     {
         float result = 0f;
 
