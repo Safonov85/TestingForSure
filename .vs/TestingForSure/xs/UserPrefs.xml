@@ -2,8 +2,7 @@
   <MonoDevelop.Ide.ItemProperties.TestingForSure PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.Workbench ActiveDocument="TestingForSure/MainWindow.cs">
     <Files>
-      <File FileName="TestingForSure/MainWindow.cs" Line="21" Column="11" />
-      <File FileName="TestingForSure/gtk-gui/MainWindow.cs" Line="1" Column="1" />
+      <File FileName="TestingForSure/MainWindow.cs" Line="51" Column="18" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">

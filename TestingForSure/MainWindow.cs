@@ -41,12 +41,14 @@ public partial class MainWindow : Gtk.Window
         CalculateNow();
     }
 
+    // calculate
     private void CalculateNow()
     {
 
         labelResult.Text = GetSumOfNumbers(comboboxArithmetic.ActiveText, float.Parse(spinbuttonNum1.Text), float.Parse(TextBoxSecondNum2.Text)).ToString();
     }
 
+    // arithmetic
     private float GetSumOfNumbers(string operation, float num1, float num2)
     {
         float result = 0f;
