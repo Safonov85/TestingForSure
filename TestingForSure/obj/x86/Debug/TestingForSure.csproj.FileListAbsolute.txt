@@ -4,3 +4,10 @@
 /home/mikey/Projects/TestingForSure/TestingForSure/obj/x86/Debug/TestingForSure.csproj.CoreCompileInputs.cache
 /home/mikey/Projects/TestingForSure/TestingForSure/obj/x86/Debug/TestingForSure.exe
 /home/mikey/Projects/TestingForSure/TestingForSure/obj/x86/Debug/TestingForSure.pdb
+/home/mikey/Projects/TestingForSure/TestingForSure/bin/Debug/PdfSharp.Charting.dll
+/home/mikey/Projects/TestingForSure/TestingForSure/bin/Debug/PdfSharp.dll
+/home/mikey/Projects/TestingForSure/TestingForSure/bin/Debug/PdfSharp.Charting.xml
+/home/mikey/Projects/TestingForSure/TestingForSure/bin/Debug/PdfSharp.xml
+/home/mikey/Projects/TestingForSure/TestingForSure/bin/Debug/de/PdfSharp.Charting.resources.dll
+/home/mikey/Projects/TestingForSure/TestingForSure/bin/Debug/de/PdfSharp.resources.dll
+/home/mikey/Projects/TestingForSure/TestingForSure/obj/x86/Debug/TestingForSure.csproj.CopyComplete

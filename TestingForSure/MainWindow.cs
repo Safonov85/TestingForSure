@@ -1,8 +1,13 @@
 ﻿using System;
+using System.Diagnostics;
+using System.Drawing;
 using Gtk;
+using PdfSharp.Pdf;
 
 public partial class MainWindow : Gtk.Window
 {
+
+    PdfDocument pdf = new PdfDocument();
 
     public MainWindow() : base(Gtk.WindowType.Toplevel) => Build();
 
@@ -12,6 +17,8 @@ public partial class MainWindow : Gtk.Window
         a.RetVal = true;
     }
 
+    //protected void OnLoadEvent(object sender, Loa)
+
     protected void OnButtonMessageClicked(object sender, EventArgs e)
     {
         this.Title = "New program 2022";
@@ -19,7 +26,17 @@ public partial class MainWindow : Gtk.Window
         NewMessage();
 
         //string man = fixed1.ToString();
+        //var bmp = (Bitmap)System.Drawing.Image.FromFile("/home/mikey/Desktop/Pictures/flower.jpg");
 
+        //Gtk.Image img = new Gtk.Image("/home/mikey/Desktop/Pictures/flower.jpg");
+
+        //imageLoadPic = img;
+        //imageLoadPic.Show();
+
+        //imageLoadPic.SetFromImage((Gtk.I)bmp, null);
+
+
+        imageLoadPic.Pixbuf = new Gdk.Pixbuf("./flower.jpeg");
     }
 
     // MessageBox for Mono
@@ -71,5 +88,20 @@ public partial class MainWindow : Gtk.Window
         }
 
         return result;
+    }
+
+    protected void OnImageLoadPicButtonReleaseEvent(object o, ButtonReleaseEventArgs args)
+    {
+        Debug.WriteLine("image load event works");
+    }
+
+    protected void OnDefaultActivated(object sender, EventArgs e)
+    {
+        this.Title = "yes default load";
+    }
+
+    protected void OnFixed1ScrollEvent(object o, ScrollEventArgs args)
+    {
+
     }
 }

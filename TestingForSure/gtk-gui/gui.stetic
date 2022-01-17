@@ -11,10 +11,12 @@
     <property name="Title" translatable="yes">MainWindow</property>
     <property name="WindowPosition">CenterOnParent</property>
     <signal name="DeleteEvent" handler="OnDeleteEvent" />
+    <signal name="DefaultActivated" handler="OnDefaultActivated" />
     <child>
       <widget class="Gtk.Fixed" id="fixed1">
         <property name="MemberName" />
         <property name="HasWindow">False</property>
+        <signal name="ScrollEvent" handler="OnFixed1ScrollEvent" />
         <child>
           <widget class="Gtk.Button" id="ButtonMessage">
             <property name="MemberName" />
@@ -94,6 +96,27 @@
           <packing>
             <property name="X">542</property>
             <property name="Y">132</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Image" id="imageLoadPic">
+            <property name="MemberName" />
+            <property name="WidthRequest">200</property>
+            <property name="HeightRequest">200</property>
+            <signal name="ButtonReleaseEvent" handler="OnImageLoadPicButtonReleaseEvent" />
+          </widget>
+          <packing>
+            <property name="X">75</property>
+            <property name="Y">197</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Arrow" id="arrow1">
+            <property name="MemberName" />
+          </widget>
+          <packing>
+            <property name="X">650</property>
+            <property name="Y">52</property>
           </packing>
         </child>
       </widget>

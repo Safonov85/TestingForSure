@@ -17,6 +17,10 @@ public partial class MainWindow
 
 	private global::Gtk.Label labelResult;
 
+	private global::Gtk.Image imageLoadPic;
+
+	private global::Gtk.Arrow arrow1;
+
 	protected virtual void Build()
 	{
 		global::Stetic.Gui.Initialize(this);
@@ -90,6 +94,22 @@ public partial class MainWindow
 		global::Gtk.Fixed.FixedChild w6 = ((global::Gtk.Fixed.FixedChild)(this.fixed1[this.labelResult]));
 		w6.X = 542;
 		w6.Y = 132;
+		// Container child fixed1.Gtk.Fixed+FixedChild
+		this.imageLoadPic = new global::Gtk.Image();
+		this.imageLoadPic.WidthRequest = 200;
+		this.imageLoadPic.HeightRequest = 200;
+		this.imageLoadPic.Name = "imageLoadPic";
+		this.fixed1.Add(this.imageLoadPic);
+		global::Gtk.Fixed.FixedChild w7 = ((global::Gtk.Fixed.FixedChild)(this.fixed1[this.imageLoadPic]));
+		w7.X = 75;
+		w7.Y = 197;
+		// Container child fixed1.Gtk.Fixed+FixedChild
+		this.arrow1 = new global::Gtk.Arrow(((global::Gtk.ArrowType)(3)), ((global::Gtk.ShadowType)(2)));
+		this.arrow1.Name = "arrow1";
+		this.fixed1.Add(this.arrow1);
+		global::Gtk.Fixed.FixedChild w8 = ((global::Gtk.Fixed.FixedChild)(this.fixed1[this.arrow1]));
+		w8.X = 650;
+		w8.Y = 52;
 		this.Add(this.fixed1);
 		if ((this.Child != null))
 		{
@@ -99,7 +119,10 @@ public partial class MainWindow
 		this.DefaultHeight = 696;
 		this.Show();
 		this.DeleteEvent += new global::Gtk.DeleteEventHandler(this.OnDeleteEvent);
+		this.DefaultActivated += new global::System.EventHandler(this.OnDefaultActivated);
+		this.fixed1.ScrollEvent += new global::Gtk.ScrollEventHandler(this.OnFixed1ScrollEvent);
 		this.ButtonMessage.Clicked += new global::System.EventHandler(this.OnButtonMessageClicked);
 		this.ButtonCalculateSum.Clicked += new global::System.EventHandler(this.OnButtonCalculateSumClicked);
+		this.imageLoadPic.ButtonReleaseEvent += new global::Gtk.ButtonReleaseEventHandler(this.OnImageLoadPicButtonReleaseEvent);
 	}
 }
