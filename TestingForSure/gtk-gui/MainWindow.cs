@@ -120,7 +120,10 @@ public partial class MainWindow
 		this.Show();
 		this.DeleteEvent += new global::Gtk.DeleteEventHandler(this.OnDeleteEvent);
 		this.DefaultActivated += new global::System.EventHandler(this.OnDefaultActivated);
+		this.DragDrop += new global::Gtk.DragDropHandler(this.OnDragDrop);
 		this.fixed1.ScrollEvent += new global::Gtk.ScrollEventHandler(this.OnFixed1ScrollEvent);
+		this.fixed1.DragDrop += new global::Gtk.DragDropHandler(this.OnFixed1DragDrop);
+		this.fixed1.DragBegin += new global::Gtk.DragBeginHandler(this.OnFixed1DragBegin);
 		this.ButtonMessage.Clicked += new global::System.EventHandler(this.OnButtonMessageClicked);
 		this.ButtonCalculateSum.Clicked += new global::System.EventHandler(this.OnButtonCalculateSumClicked);
 		this.imageLoadPic.ButtonReleaseEvent += new global::Gtk.ButtonReleaseEventHandler(this.OnImageLoadPicButtonReleaseEvent);

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Diagnostics;
 using System.Drawing;
+using System.Security.Cryptography;
 using Gtk;
 using PdfSharp.Pdf;
 
@@ -10,6 +11,7 @@ public partial class MainWindow : Gtk.Window
     PdfDocument pdf = new PdfDocument();
 
     public MainWindow() : base(Gtk.WindowType.Toplevel) => Build();
+
 
     protected void OnDeleteEvent(object sender, DeleteEventArgs a)
     {
@@ -23,7 +25,7 @@ public partial class MainWindow : Gtk.Window
     {
         this.Title = "New program 2022";
 
-        NewMessage();
+        NewMessage("it works");
 
         //string man = fixed1.ToString();
         //var bmp = (Bitmap)System.Drawing.Image.FromFile("/home/mikey/Desktop/Pictures/flower.jpg");
@@ -37,17 +39,19 @@ public partial class MainWindow : Gtk.Window
 
 
         imageLoadPic.Pixbuf = new Gdk.Pixbuf("./flower.jpeg");
+
+        
     }
 
     // MessageBox for Mono
-    void NewMessage()
+    void NewMessage(string message)
     {
         MessageDialog messageBox = new MessageDialog(
         this,
         DialogFlags.DestroyWithParent,
         MessageType.Info,
         ButtonsType.Ok,
-        "MessageBox Works!");
+        message);
 
         messageBox.Run();
         messageBox.Destroy();
@@ -103,5 +107,20 @@ public partial class MainWindow : Gtk.Window
     protected void OnFixed1ScrollEvent(object o, ScrollEventArgs args)
     {
 
+    }
+
+    protected void OnFixed1DragDrop(object o, DragDropArgs args)
+    {
+        NewMessage("drag drop works");
+    }
+
+    protected void OnFixed1DragBegin(object o, DragBeginArgs args)
+    {
+        NewMessage("drag begin works");
+    }
+
+    protected void OnDragDrop(object o, DragDropArgs args)
+    {
+        NewMessage("drag drop MainWindow works");
     }
 }

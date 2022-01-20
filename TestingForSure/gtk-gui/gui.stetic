@@ -12,11 +12,14 @@
     <property name="WindowPosition">CenterOnParent</property>
     <signal name="DeleteEvent" handler="OnDeleteEvent" />
     <signal name="DefaultActivated" handler="OnDefaultActivated" />
+    <signal name="DragDrop" handler="OnDragDrop" />
     <child>
       <widget class="Gtk.Fixed" id="fixed1">
         <property name="MemberName" />
         <property name="HasWindow">False</property>
         <signal name="ScrollEvent" handler="OnFixed1ScrollEvent" />
+        <signal name="DragDrop" handler="OnFixed1DragDrop" />
+        <signal name="DragBegin" handler="OnFixed1DragBegin" />
         <child>
           <widget class="Gtk.Button" id="ButtonMessage">
             <property name="MemberName" />
